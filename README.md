@@ -14,6 +14,7 @@ O web app deve:
     - Exibir nos resultados da busca: nome, cartaz, data de lançamento, sinopse e pontuação do filme
     - Possa ver, ao clicar em um resultado da busca, mais detalhes do filme, como: (...).
 - Ser responsivo
+- Ter boa performance
 - Funcionar na última versão dos principais browsers (Chrome, Firefox, Safari e Edge)
 - Reproduzir os layouts a seguir:
 
@@ -23,7 +24,10 @@ O web app deve:
 ![](assets/filme.jpeg)
 > Detalhes de filme
 
-As especificações a seguir não são obrigatórias, mas contam pontos:
+As especificações a seguir não são obrigatórias, mas contam pontos extras:
 
 - Ter HTML semântico
-- Fazer uso de técnicas avançadas em CSS
+- Fazer uso de técnicas avançadas em CSS, HTML e Javascript
+- Demonstrar domínio de features modernas (ES6+) do Javascript
+- Funcionar em browsers antigos
+- Ser um PWA
