@@ -46,3 +46,11 @@ As especificações a seguir _não são obrigatórias_, mas contam pontos _extra
     - React
     - Typescript
     - Redux/MobX
+
+## Entrega
+
+O projeto do desafio técnico deve ser entregue em um dos seguintes formatos:
+- Repositório hospedado (Github, Gitlab, Bitbucket ou similares)
+- Arquivo compactado
+
+Em ambos os casos, deve constar no projeto um arquivo chamado README.md com instruções para a compilação/execução do web app.
