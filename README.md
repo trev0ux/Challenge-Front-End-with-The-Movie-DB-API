@@ -5,6 +5,7 @@
 Implementar um web app responsivo que consuma a [API do The Movie DB](https://www.themoviedb.org/documentation/api) e permita buscar e ver detalhes de filmes de seu catálogo.
 
 ## Especificações
+### Especificações obrigatórias
 
 O web app _deve_:
 
@@ -24,6 +25,14 @@ O web app _deve_:
 ![](assets/filme.jpeg)
 > Detalhes de filme
 
+Vale citar que as fontes usadas nos layouts foram Abel e Lato.
+
+O web app _não pode_:
+
+- Fazer uso de frameworks CSS, como Bootstrap e Foundation
+
+### Especificações adicionais
+
 As especificações a seguir _não são obrigatórias_, mas contam pontos _extras_:
 
 - Ter HTML semântico
@@ -31,3 +40,9 @@ As especificações a seguir _não são obrigatórias_, mas contam pontos _extra
 - Demonstrar domínio de features modernas (ES6+) do Javascript
 - Funcionar em browsers mais antigos
 - Ser um PWA
+- Fizer uso de uma ou mais ferramentas de nossa stack:
+    - React
+    - Typescript
+    - Redux/MobX
+
+#
