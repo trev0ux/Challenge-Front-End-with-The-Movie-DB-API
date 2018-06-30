@@ -19,11 +19,11 @@ O web app _deve_:
 - Funcionar na última versão dos principais browsers (Chrome, Firefox, Safari e Edge)
 - Reproduzir os layouts a seguir:
 
-![](assets/lista.jpeg)
-> Resultados de busca
+> Resultados de busca:
+> ![](assets/lista.jpeg)
 
-![](assets/filme.jpeg)
-> Detalhes de filme
+> Detalhes de filme:
+> ![](assets/filme.jpeg)
 
 Vale citar que as fontes usadas nos layouts foram Abel e Lato.
 
