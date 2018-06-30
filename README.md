@@ -44,5 +44,3 @@ As especificações a seguir _não são obrigatórias_, mas contam pontos _extra
     - React
     - Typescript
     - Redux/MobX
-
-#
