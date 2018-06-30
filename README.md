@@ -22,6 +22,8 @@ O web app _deve_:
 > Resultados de busca:
 > ![](assets/lista.jpeg)
 
+---
+
 > Detalhes de filme:
 > ![](assets/filme.jpeg)
 
