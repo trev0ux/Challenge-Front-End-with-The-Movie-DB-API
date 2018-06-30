@@ -40,12 +40,11 @@ As especificações a seguir _não são obrigatórias_, mas contam pontos _extra
 - Ter HTML semântico
 - Fazer uso de técnicas avançadas em CSS, HTML e Javascript
 - Demonstrar domínio de features modernas (ES6+) do Javascript
-- Funcionar em browsers mais antigos
 - Ser um PWA
-- Fizer uso de uma ou mais ferramentas de nossa stack:
-    - React
-    - Typescript
-    - Redux/MobX
+- Fizer uso de uma ou mais das seguintes ferramentas:
+    - React, Vue, Angular ou similares
+    - Typescript, Flow ou similares
+    - Redux, MobX ou similares
 
 ## Entrega
 
