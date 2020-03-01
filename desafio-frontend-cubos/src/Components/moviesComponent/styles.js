@@ -50,8 +50,6 @@ export const Date = styled.span`
 `;
 
 export const Percents = styled.span`
-    font-family: 'Lato', ;
-    src:  url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
     font-size: 28px;
     border: 4px solid ${FontColors.fontColor1};
     border-radius: 100px;
