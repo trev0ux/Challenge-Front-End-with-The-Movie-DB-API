@@ -37,14 +37,14 @@ class App extends Component {
     this.setState({ searchTerm: e.target.value })
   }
 
-  showVideo = () => {
+ /* showVideo = () => {
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${this.state.searchTerm}&page=${pageNumber}`)
     .then(data => data.json())
     .then(data => {
       console.log(data);
       this.setState({ movies: [...data.results], movies: [...data.video] })
     })
-  }
+  } */
 
   nextPage = (pageNumber) => {
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${this.state.searchTerm}&page=${pageNumber}`)
