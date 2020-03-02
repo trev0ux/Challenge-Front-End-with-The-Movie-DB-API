@@ -54,15 +54,15 @@ export const Percents = styled.div`
     font-size: 28px;
     border: 4px;
     border-radius: 100%;
-    padding: 24px 5px;
+    padding: 26px 6px;
     background: ${Colors.primaryColor};
     position: absolute;
     top: 30px;
     a {
         content: " ";
-        border: 4px solid ${FontColors.fontColor1};
+        border: 5px solid ${FontColors.fontColor1};
         border-radius: 100%;
-        padding: 16px 8px;
+        padding: 18px 16px;
         background:#116193;
         z-index: -2;
 

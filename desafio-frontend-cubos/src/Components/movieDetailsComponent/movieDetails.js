@@ -44,7 +44,7 @@ const MovieDetails = (props) => {
                             <TagFilm>Ação</TagFilm>
                             <TagFilm>Aventura</TagFilm>
                             <TagFilm>Fantasia</TagFilm>
-                            <PercentsFilm><a>75%</a></PercentsFilm>
+    <PercentsFilm><a>{props.currentMovie.vote_averrage}%</a></PercentsFilm>
                             </Col2>
                         </Details>
                         </Row>

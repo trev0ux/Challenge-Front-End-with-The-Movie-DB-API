@@ -10,7 +10,7 @@ export const MoviesList = (props) => {
             {
                 props.movies.map((movie, i) => {
                     return (
-                        <Movie viewDetails={props.viewDetails} movieId={movie.id} status={movie.status} title={movie.title} video={movie.video} overview={movie.overview} key={i} release_date={movie.release_date} image={movie.poster_path} />
+                        <Movie viewDetails={props.viewDetails} vote={movie.vote_average} movieId={movie.id} status={movie.status} title={movie.title} video={movie.video} overview={movie.overview} key={i} release_date={movie.release_date} image={movie.poster_path} />
                     )
                 })
             }

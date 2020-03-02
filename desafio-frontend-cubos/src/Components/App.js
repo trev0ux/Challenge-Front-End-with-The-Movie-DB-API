@@ -6,9 +6,11 @@ import MoviesList from './moviesListComponent/moviesList';
 import Pagination from './paginationComponent/pagination';
 import MovieDetails from './movieDetailsComponent/movieDetails';
 
+
 class App extends Component {
   constructor(){
     super()
+    //atributes
     this.state = {
       movies: [],
       searchTerm: '',
@@ -19,6 +21,8 @@ class App extends Component {
     this.apiKey = 'c28851dc21cda1164ad5cf17e885f600'
   }
 
+
+//call API
   handleSubmit = (e) => {
     e.preventDefault();
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${this.state.searchTerm}`)
@@ -31,6 +35,15 @@ class App extends Component {
 
   handleChange = (e) => {
     this.setState({ searchTerm: e.target.value })
+  }
+
+  showVideo = () => {
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${this.state.searchTerm}&page=${pageNumber}`)
+    .then(data => data.json())
+    .then(data => {
+      console.log(data);
+      this.setState({ movies: [...data.results], movies: [...data.video] })
+    })
   }
 
   nextPage = (pageNumber) => {

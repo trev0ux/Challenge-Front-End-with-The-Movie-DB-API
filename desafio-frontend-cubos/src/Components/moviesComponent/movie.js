@@ -8,7 +8,7 @@ export const Movie = (props) => {
         <MovieCard onClick={() => props.viewDetails(props.movieId)}> 
           <Head>
             <Title>
-            <Percents><a>75%</a></Percents>
+  <Percents><a>{props.vote}%</a></Percents>
                   <h2> {props.title} </h2>
                   <Date> {props.release_date.substring(5).split("-").concat(props.release_date.substring(0, 4)).join("/")} </Date>
             </Title>
