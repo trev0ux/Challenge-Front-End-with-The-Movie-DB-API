@@ -4,15 +4,16 @@ import FontColors from '../global';
 
 export const Title = styled.h1`
     text-align: center;
-    color: ${FontColors.fontColor1};
+    color: #00e5e2;
     font-size: 42px;
     font-weight: 400;
-    margin: 20px 0px;
+    margin: 15px 0px;
 `;
 
 export const Nav = styled.div`
+    grid-area: header;
     width: 100%;
-    height: 13vh;
+    height: 75px;
     background-color: #116193;
     display: inline-block;
 `

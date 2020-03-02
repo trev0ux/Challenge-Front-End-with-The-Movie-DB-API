@@ -6,8 +6,9 @@ import { Colors, FontColors } from '../global';
 export const MovieCard = styled.div`
     width: 100%;
     height: 25%;
-    margin: 35% 0;
-    margin-block-start: 15%;
+    margin: 25% 0;
+    margin-block-start: 10%;
+    cursor: pointer;
 `;
 
 
@@ -49,24 +50,22 @@ export const Date = styled.span`
         font-weight: 300;
 `;
 
-export const Percents = styled.span`
+export const Percents = styled.div`
     font-size: 28px;
-    border: 4px solid ${FontColors.fontColor1};
-    border-radius: 100px;
-    padding: 19px 9px;
+    border: 4px;
+    border-radius: 100%;
+    padding: 24px 5px;
     background: ${Colors.primaryColor};
     position: absolute;
     top: 30px;
-
-    &:before {
+    a {
         content: " ";
-        border: 4px solid
-        #116193;
-        border-radius: 100px;
-        padding: 39px 39px;
-        position: absolute;
-        top: -9px;
-        left: -8px;
+        border: 4px solid ${FontColors.fontColor1};
+        border-radius: 100%;
+        padding: 16px 8px;
+        background:#116193;
+        z-index: -2;
+
     }
 `;
 
@@ -94,7 +93,7 @@ export const Details = styled.div`
 `;
 
 
-export const Tag = styled.span`
+export const Tag = styled.a`
     color: ${Colors.primaryColor};
     font-size: 20px; 
     border: 1px solid ${Colors.primaryColor};

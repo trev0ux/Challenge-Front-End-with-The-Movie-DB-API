@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { GlobalStyles, Container } from './global';
+import { GlobalStyles } from './global';
 import Header from './headerComponent/header';
 import Search from './searchComponent/search';
 import MoviesList from './moviesListComponent/moviesList';
 import Pagination from './paginationComponent/pagination';
+import MovieDetails from './movieDetailsComponent/movieDetails';
 
 class App extends Component {
   constructor(){
@@ -41,18 +42,27 @@ class App extends Component {
     })
   }
 
+  viewDetails = (id) => {
+    const filteredMovie = this.state.movies.filter(movie => movie.id == id)
+
+    const newCurrentMovie = filteredMovie.length > 0 ? filteredMovie[0] : null
+
+    this.setState({ currentMovie: newCurrentMovie })
+  }
+
+  closeDetails = () => {
+    this.setState({ currentMovie: null })
+  }
+
   render (){
-    const numberPages = Math.floor(this.state.totalResults / 50);
+    const numberPages = Math.floor(this.state.totalResults / 100);
 
     return (
       <div>
       <GlobalStyles />
       <Header />
-        <Container>
-            <Search handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
-            <MoviesList movies={this.state.movies} />
-    { this.state.totalResults > 5 ? <Pagination pages={numberPages} nextPage={this.nextPage} currentPage={this.state.currentPage} /> : '' }
-        </Container>
+        {this.state.currentMovie == null ? <div><Search handleSubmit={this.handleSubmit} handleChange={this.handleChange}/><MoviesList viewDetails={this.viewDetails} movies={this.state.movies} /></div> : <MovieDetails currentMovie={this.state.currentMovie} closeDetails={this.closeDetails}/>}
+    { this.state.totalResults > 5 && this.state.currentMovie == null ? <Pagination pages={numberPages} nextPage={this.nextPage} currentPage={this.state.currentPage} /> : '' }
       </div>
     );
   }
